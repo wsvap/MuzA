@@ -1,0 +1,22 @@
+<div class="layout-sidebar" [ngClass]="{'layout-sidebar-active':app.mobileMenuActive}">
+  <ul class="layout-menu" (click)="app.hideMobileMenu($event)">
+    <li>
+      <a [routerLink]="['/exhibitions']" routerLinkActive="active">
+        <i class="fa fa-globe"></i>
+        <span>Kiállítások</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/works-of-art']" routerLinkActive="active">
+        <i class="fa fa-id-card"></i>
+        <span>Műtárgyak</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/edit-exhibition']" routerLinkActive="active">
+        <i class="fa fa-sitemap"></i>
+        <span>Kiállítás szerkesztése</span>
+      </a>
+    </li>
+  </ul>
+</div>
